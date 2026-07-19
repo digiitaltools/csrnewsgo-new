@@ -312,7 +312,7 @@
     };
 	
     const loadHome = async () => {
-        loadStylesheet('https://cdn.jsdelivr.net/gh/username/repo/style-home.css');
+        loadStylesheet('https://cdn.jsdelivr.net/gh/digiitaltools/csrnewsgo-new/style-home.css');
 
         const res = await fetchAPI('/api/news');
         if (!res) return renderNoConnection();
@@ -376,7 +376,7 @@
     };
 	
     const loadDetail = async (slug, type = "news") => {
-        loadStylesheet('https://cdn.jsdelivr.net/gh/username/repo/style-single.css');
+        loadStylesheet('https://cdn.jsdelivr.net/gh/digiitaltools/csrnewsgo-new/style-single.css');
 
 		const detailEndpoint = `/api/news/${type}/${slug}`;
 		if (!memoryCache.has(detailEndpoint)) renderSkeletonDetail();
